@@ -1,4 +1,4 @@
-package com.example.xulf.shoponline;
+﻿package com.example.xulf.shoponline;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -47,7 +47,7 @@ public class AddAdressActivity extends AppCompatActivity  implements View.OnClic
 
     private LinearLayout lladress;//地址
 
-    private App app=App.getInstance();//实例对象
+    private App app=App.getInstance();//实例对象1
 
     private OkHttpHelper okHttpHelper=OkHttpHelper.getInstance();//网络请求
 
