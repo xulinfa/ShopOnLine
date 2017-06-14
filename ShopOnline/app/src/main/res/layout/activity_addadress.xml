@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <!--标题-->
+<RelativeLayout
+    android:background="@color/bgred"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <ImageView
+        android:id="@+id/addadress_back"
+        android:src="@mipmap/icon_left"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加地址"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:textSize="26sp"/>
+</RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/deepgrey"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/tv_addadress_username"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:hint="收货人姓名"/>
+        <requestFocus></requestFocus>
+        <!--虚线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/setting_dottedline"></LinearLayout>
+
+        <EditText
+            android:id="@+id/tv_addadress_userphone"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:hint="联系电话"/>
+        <requestFocus></requestFocus>
+        <!--虚线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/setting_dottedline"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_adress_province"
+            android:layout_width="match_parent"
+
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_addadress_adressprovice"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="60dp"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:hint="省、市、区"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_right"/>
+        </LinearLayout>
+        <!--虚线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/setting_dottedline"></LinearLayout>
+
+        <EditText
+            android:id="@+id/tv_addadress_detailadress"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:hint="详细街道"/>
+        <!--虚线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/setting_dottedline"></LinearLayout>
+
+        <EditText
+            android:id="@+id/tv_addadress_postcode"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:hint="邮编"/>
+        <!--虚线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/setting_dottedline"></LinearLayout>
+
+        <Button
+
+    android:layout_marginLeft="10dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/selector_addbutton_bg"
+    android:layout_marginTop="15dp"
+    android:id="@+id/btn_save_adress"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="保存"
+    android:textSize="24sp"
+    android:textColor="@color/white"/>
+    </LinearLayout>
+
+</LinearLayout>

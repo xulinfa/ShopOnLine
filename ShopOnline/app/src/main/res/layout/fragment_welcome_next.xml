@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:id="@+id/rl_welcome_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true">
+
+        <!--背景中图-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:src="@drawable/welcome_icon_next_bg"/>
+    </RelativeLayout>
+
+    <!--动画弹出1-->
+    <ImageView
+        android:id="@+id/iv_function_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/welcome_icon_function_first"
+        android:layout_marginTop="60dp"
+        android:visibility="gone"
+        android:layout_marginLeft="35dp"/>
+
+    <!--动画弹出2-->
+    <ImageView
+        android:id="@+id/iv_function_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/welcome_icon_function_second"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"/>
+
+    <!--动画弹出3-->
+    <ImageView
+        android:id="@+id/iv_function_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="215dp"
+        android:visibility="gone"
+        android:src="@drawable/welcome_icon_function_third"/>
+
+
+    <!--动画弹出4-->
+    <ImageView
+        android:id="@+id/iv_function_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="38dp"
+        android:layout_marginTop="240dp"
+        android:visibility="gone"
+        android:src="@drawable/welcome_icon_function_four"/>
+
+    <!--下面文字介绍-->
+    <TextView
+        android:id="@+id/reward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_watch_video_dating"
+        android:layout_centerHorizontal="true"
+        android:text="在家购物"
+        android:textColor="#FFFFFFFF"
+        android:textSize="52dp"/>
+
+    <TextView
+        android:id="@+id/tv_watch_video_dating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="65dp"
+        android:text="开心购物   快乐玩耍"
+        android:textColor="#FFFFFFFF"
+        android:textSize="27dp"/>
+
+</RelativeLayout>

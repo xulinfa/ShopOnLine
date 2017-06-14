@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+   android:gravity="center"
+    android:layout_height="70dp">
+
+    <ImageView
+        android:id="@+id/img_sanjiao"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_sanjiao"/>
+    <TextView
+        android:layout_toRightOf="@+id/img_sanjiao"
+        android:id="@+id/tv_category_left_typename"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:text="白酒白酒白"/>
+    <TextView
+        android:layout_below="@+id/tv_category_left_typename"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+</RelativeLayout>

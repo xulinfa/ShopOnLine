@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+<!--    &lt;!&ndash;商品图片&ndash;&gt;
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_imageofproducr"
+        android:src="@mipmap/icon_home"
+        android:background="@mipmap/icon_home"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />-->
+    <com.example.xulf.shoponline.com.loopj.android.image.SmartImageView
+        android:id="@+id/imv_hot"
+        android:src="@mipmap/icon_home"
+        android:layout_width="130dp"
+        android:layout_height="130dp" />
+
+  <!--  <ImageView
+        android:id="@+id/imv_hot"
+        android:src="@mipmap/icon_home"
+        android:layout_width="150dp"
+        android:layout_height="150dp"  />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+       android:layout_marginBottom="8dp"
+        android:layout_height="130dp"
+        android:orientation="vertical">
+        <!--商品名称-->
+        <TextView
+            android:id="@+id/tv_productName"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="外星人"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <!--商品简介-->
+        <TextView
+            android:id="@+id/tv_describeofproduct"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="50dp"
+            android:textColor="@color/deepgrey"
+            android:textSize="16sp"
+            android:text="商品简介商品简介商品商品简介商品简介简介" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="40dp">
+            <!--商品价格-->
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/tv_priceofproduct"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="￥55"
+                android:textColor="@color/bgred"
+                android:textSize="24sp"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btn_addToCarHot"
+                android:layout_width="0dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:textSize="16sp"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_button_onlybg"
+                android:text="加入购物车"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

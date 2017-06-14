@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--灰色-->
+    <color name="deepgrey">#808080</color>
+    <!--暗灰-->
+    <color name="darkgrey">#696969</color>
+    <!--红色-->
+    <color name="red">#FF0000</color>
+    <!--海贝色-->
+    <color name="haibeise">#FFF5EE</color>
+    <!--白色-->
+    <color name="white">#FFFFFF</color>
+    <!--烟白色-->
+    <color name="whitesmoke">#F5F5F5</color>
+    <!--浅灰色-->
+    <color name="grey">#2000</color>
+    <!--黑色-->
+    <color name="black">#000</color>
+    <!--浅黑-->
+    <color name="qianblack">#dd000000</color>
+    <!--西红柿色-->
+    <color name="tomato">#FF6347</color>
+    <!--背景透明蓝色-->
+    <color name="touminglv">#803F51B5</color>
+    <!--红背景-->
+    <color name="bgred">#D81916</color>
+    <!--暗红-->
+    <color name="bgred2">#DC143C</color>
+    <!-- 洋李色 -->
+    <color name="gainsboro">#dcdcdc</color>
+    <!-- 淡灰色 -->
+    <color name="crimson">#dc143c</color>
+    <!--     金黄色 -->
+    <color name="goldyellow">#ff9428</color>
+
+    <color name="red_btn_color_normal">#ffff5454</color>
+    <color name="red_btn_color_pressed">#ffd24242</color>
+
+</resources>

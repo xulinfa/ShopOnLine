@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+<!--    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_itempic"
+        android:layout_margin="10dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp" />-->
+        <com.example.xulf.shoponline.com.loopj.android.image.SmartImageView
+            android:id="@+id/sdv_itempic"
+            android:layout_margin="10dp"
+            android:layout_width="120dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/welcom_bg"
+            android:layout_height="130dp" />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/tv_createOrder_productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:text="机械键盘"/>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/tv_orderitemgetproductDec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:textColor="@color/deepgrey"
+            android:text="机械键盘的描述"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_itemprice"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/bgred"
+            android:textSize="16sp"
+            android:text="￥49.99"/>
+
+        <TextView
+            android:id="@+id/tv_productitemnum"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/deepgrey"
+            android:textSize="16sp"
+            android:text="x 1"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/deepgrey"/>
+
+
+
+
+</LinearLayout>

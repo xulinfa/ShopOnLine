@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.example.xulf.shoponline.fragment.MineFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+        android:layout_width="match_parent"
+       android:orientation="vertical"
+        android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@color/bgred"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="200dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_mine"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/head" />
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+       android:layout_marginTop="15dp"
+        android:text="18459159891"
+        android:layout_below="@id/img_mine"/>
+</RelativeLayout>
+
+<!--是顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶-->
+    <LinearLayout
+        android:id="@+id/ll_change_personmessage"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/icon_message"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:text="修改个人资料"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
+
+    <LinearLayout
+        android:id="@+id/llorder"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/icon_myorder"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:text="订单管理"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
+
+
+    <!--地址管理-->
+
+    <LinearLayout
+        android:id="@+id/ll_myReceiverAdress"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/icon_adress_mine"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:text="地址管理"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
+    <!--扫一扫-->
+
+    <LinearLayout
+        android:id="@+id/ll_saoyisao"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/saoyisao"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:text="扫一扫"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+
+    <!--联系我们-->
+    <LinearLayout
+        android:id="@+id/ll_contas_us"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/icon_conta_us"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:text="联系我们"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"/>
+    <!--是顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶顶-->
+</LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

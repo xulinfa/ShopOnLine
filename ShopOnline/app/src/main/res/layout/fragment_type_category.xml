@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/fragment_category"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--标题-->
+    <RelativeLayout
+        android:background="@color/bgred"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/tv_product_category_title"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="产品分类"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:textSize="26sp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <!--分类项-->
+        <LinearLayout
+            android:background="@color/whitesmoke"
+            android:layout_width="120dp"
+            android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/lv_category_left_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+        </LinearLayout>
+
+
+        <!--具体产品-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <GridView
+                android:background="@color/grey"
+                android:id="@+id/gv_category_category_productlist"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:horizontalSpacing="5dp"
+                android:verticalSpacing="5dp"
+                android:numColumns="2">
+            </GridView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

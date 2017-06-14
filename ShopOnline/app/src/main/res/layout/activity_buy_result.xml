@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--标题-->
+    <!--标题-->
+    <RelativeLayout
+        android:background="@color/bgred"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付结果"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:textSize="26sp"/>
+    </RelativeLayout>
+
+    <!--结果图-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+        <ImageView
+            android:id="@+id/img_result_ofpay"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_success_128"/>
+        <TextView
+            android:id="@+id/tv_goorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看订单列表"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:textColor="@color/bgred"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_result_goHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="继续购物"
+        android:textSize="22sp"
+        android:onClick="shopingAgainClick"
+        android:textColor="@color/white"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/selector_addbutton_bg"
+        android:layout_marginTop="15dp"/>
+
+
+
+</LinearLayout>

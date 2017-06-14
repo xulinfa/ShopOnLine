@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/selector_list_item"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+
+    <CheckBox
+        android:id="@+id/cb_checkproduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+
+        style="@style/customCheckbox"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_productImg"
+            android:layout_width="140dp"
+            android:scaleType="fitXY"
+            android:layout_margin="5dp"
+            android:background="@mipmap/welcom_bg"
+            android:layout_height="140dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_cartProductDes"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="描述描述描描述描描述描述描述描述描述描述"
+                android:layout_weight="2"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+
+                android:gravity="center"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:id="@+id/tv_cartProductPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="价格价"
+                    android:textColor="@color/bgred"
+                    android:layout_weight="1"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/tv_add"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="+"
+                        android:gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/selector_cartbtn_bg"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/tv_num"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="1"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:background="@drawable/textview_border"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/tv_del"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center"
+                        android:background="@drawable/selector_cartbtn_bg"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+    <!--下划线-->
+ <!--   <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/deepgrey"/>-->
+    <!--虚线-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/setting_dottedline"></LinearLayout>
+
+</LinearLayout>

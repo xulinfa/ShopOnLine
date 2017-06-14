@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+   <com.example.xulf.shoponline.com.loopj.android.image.SmartImageView
+       android:id="@+id/img_categorypro_hot"
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
+       android:scaleType="fitXY"
+       android:src="@mipmap/icon_pictext"/>
+        <TextView
+            android:id="@+id/tv_ategorypro_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/deepgrey"
+            android:text="商品名称"/>
+        <TextView
+            android:id="@+id/tv_categorypro_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/bgred"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="15dp"
+            android:text="￥22"/>
+
+</LinearLayout>

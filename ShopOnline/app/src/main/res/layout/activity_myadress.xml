@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AdressManageActivity"
+    android:background="@color/grey"
+    android:layout_height="match_parent">
+ <!--   <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/btn_add_adresas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+&lt;!&ndash;        &ndash;&gt;
+
+        &lt;!&ndash;是否出现划线&ndash;&gt;
+        <TextView
+            android:id="@+id/tv_line"
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:layout_height="20dp" />
+    </LinearLayout>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_adress"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/btn_add_adresas"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+    </android.support.v7.widget.RecyclerView>
+
+<!--    <ListView
+        android:id="@+id/lv_adress"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/btn_add_adresas"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>-->
+
+
+    <Button
+        android:id="@+id/btn_add_adresas"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="+新增收获地址"
+        android:onClick="addNewAdressClick"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@drawable/selector_button_onlybg"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

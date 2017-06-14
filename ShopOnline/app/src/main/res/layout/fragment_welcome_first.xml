@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--流星背景图-->
+    <ImageView
+        android:id="@+id/iv_receive_apicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/welcome_icon_popular"/>
+
+    <!--主要动画部分内容-->
+    <RelativeLayout
+        android:id="@+id/rl_receive_apicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp" >
+
+        <ImageView
+            android:id="@+id/iv_receive_bg"
+            android:layout_width="200dp"
+            android:layout_height="190dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/welcome_icon_receive_apicture"/>
+
+        <!--动画中掉落的金币-->
+        <ImageView
+            android:id="@+id/iv_gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/welcome_icon_gold"
+            android:layout_marginTop="32dp"
+            android:layout_centerHorizontal="true"
+            android:paddingRight="10dp"/>
+
+        <!--中间的手指图标-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/welcome_icon_finger"
+            android:layout_centerHorizontal="true"
+            android:paddingRight="17dp"/>
+
+        <!--最后填充圆形区域的图片 默认不显示-->
+        <ImageView
+            android:id="@+id/iv_reward"
+            android:layout_width="200dp"
+            android:layout_height="190dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/welcome_icon_reward"
+            android:visibility="gone"/>
+
+
+
+        <TextView
+            android:id="@+id/reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/tv_shooting_video_money"
+            android:text="网上便利店"
+            android:textColor="#FFFFFFFF"
+            android:textSize="52dp" />
+
+        <TextView
+            android:id="@+id/tv_shooting_video_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="60dp"
+            android:text="特方便    超实惠"
+            android:textColor="#FFFFFFFF"
+            android:textSize="37dp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

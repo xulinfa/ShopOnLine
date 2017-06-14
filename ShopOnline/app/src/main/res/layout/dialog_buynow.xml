@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:clipChildren="false"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+
+    <com.example.xulf.shoponline.com.loopj.android.image.SmartImageView
+        android:id="@+id/smv_dialog_product_pic"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:src="@mipmap/welcom_bg"/>
+    <TextView
+        android:id="@+id/tv_dialog_proName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/smv_dialog_product_pic"
+        android:text="机械键盘"/>
+
+    <TextView
+        android:id="@+id/tv_dialog_proPrice"
+        android:layout_below="@id/tv_dialog_proName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/bgred2"
+        android:layout_toRightOf="@+id/smv_dialog_product_pic"
+        android:text="￥100"/>
+    <ImageView
+        android:id="@+id/img_cancle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="15dp"
+        android:src="@mipmap/icon_cancle"/>
+
+    <!--fenge-->
+    <TextView
+        android:id="@+id/tv_dialog_fenge"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/smv_dialog_product_pic"
+        android:layout_height="1dp"
+        android:background="@color/gainsboro"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_dialog_num"
+        android:layout_below="@+id/tv_dialog_fenge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购买数量"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"/>
+        <LinearLayout
+            android:layout_alignParentRight="true"
+            android:layout_width="160dp"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/tv_dialog_add"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="+"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/selector_cartbtn_bg"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_dialog_num"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="1"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:background="@drawable/textview_border"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_dialog_del"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="-"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:background="@drawable/selector_cartbtn_bg"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--fenge-->
+    <TextView
+        android:id="@+id/tv_dialog_fenge2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/rl_dialog_num"
+        android:layout_height="1dp"
+        android:background="@color/gainsboro"/>
+
+
+
+    <Button
+        android:id="@+id/btn_dialog_sure"
+        android:layout_below="@id/tv_dialog_fenge2"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/selector_addbutton_bg"
+        android:textSize="22sp"
+        android:layout_marginBottom="20dp"
+        android:text="确认"/>
+
+
+
+
+
+</RelativeLayout>

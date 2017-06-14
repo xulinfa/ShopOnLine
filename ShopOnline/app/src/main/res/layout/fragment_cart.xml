@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.xulf.shoponline.fragment.CartFragment">
+
+    <!--标题-->
+    <RelativeLayout
+        android:id="@+id/ll_cart_title"
+        android:background="@color/bgred"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购物车"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:textSize="26sp"/>
+        <Button
+            android:id="@+id/btn_cart_action_change"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑"
+           android:layout_margin="8dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:onClick="changeClick"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:background="@drawable/selector_button_onlybg"
+            android:textSize="22sp" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/ll_cart_title"
+        android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cart_showShop"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </ScrollView>
+
+    <!--没有数据时显示-->
+    <LinearLayout
+        android:id="@+id/ll_nodata"
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="300dip"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/cart_empty"/>
+        <TextView
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:text="您的购物车还是空的，快去添加商品吧！"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/grey"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <!--全选框-->
+            <CheckBox
+                android:id="@+id/cart_checkAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:checked="false"
+                android:textSize="18sp"
+                style="@style/checkboxAll"
+                android:text="全选"
+                />
+        </LinearLayout>
+<!--总价文本-->
+        <TextView
+
+            android:id="@+id/tv_cartPrice"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="总计"/>
+        <!--结算按钮-->
+
+        <Button
+            android:id="@+id/btn_cartPay"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="60dp"
+            android:text="结算"
+            android:onClick="pay"
+            android:background="@drawable/selector_cartbtn_bg"
+            android:textSize="26sp"/>
+        <!--删除商品按钮-->
+        <Button
+            android:id="@+id/btn_cartDel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:onClick="del"
+            android:background="@drawable/selector_cartbtn_bg"
+            android:layout_height="60dp"
+            android:text="删除"
+            android:visibility="gone"
+            android:textSize="26sp"/>
+
+    </LinearLayout>
+</RelativeLayout>
